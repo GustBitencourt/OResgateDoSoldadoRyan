@@ -164,6 +164,7 @@ function start() {
     // jogador com o inimigo1
     if (colisao3.length > 0) {
       pontos = pontos + 100;
+      velocidade=velocidade+0.3;
       inimigo1X = parseInt($("#inimigo1").css("left"));
       inimigo1Y = parseInt($("#inimigo1").css("top"));
 
@@ -310,7 +311,6 @@ function start() {
   }
 
   //Barra de energia
-
   function energia() {
     if (energiaAtual == 3) {
       $("#energia").css("background-image", "url(imgs/energia3.png)");
