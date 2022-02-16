@@ -350,7 +350,7 @@ function start() {
 
     if (energiaAtual == 0) {
       $("#energia").css("background-image", "url(imgs/energia0.png)");
-      gameOver();      
+      gameOver();
     }
   }
 
@@ -377,4 +377,11 @@ function start() {
         "<div id='reinicia' onClick=reiniciaJogo()><h3>Jogar Novamente</h3></div>"
     );
   }
+}
+
+//Reinicia o Jogo
+function reiniciaJogo() {
+  somGameover.pause();
+  $("#fim").remove();
+  start();
 }
